@@ -7,8 +7,7 @@ import ServicesPage from "./Pages/ServicesPage";
 import ContactPage from "./Pages/ContactPage";
 
 import Navbars from "./Components/Navbar";
-import Signin from "./Pages/Signin";
-import Signup from "./Pages/Signup";
+
 import ScrollAnimation from "./scroll";
 
 
@@ -20,14 +19,11 @@ const App = () => {
       {/* <Header /> */}
       <Navbars/>
       <Routes>
-      <Route path="/signin" element={<Signin/>}/>
-      <Route path="/" element={isAuthenticated ? <Home /> : <Navigate to="/signin" /> } />
+      <Route path="/" element={ <Home />  } />
       <Route path="/about" element={<AboutPage />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/contact" element={<ContactPage />} />
        
-        <Route path="/signup" element={<Signup/>}/>
-        <Route path="/" element={isAuthenticated ? <Home /> : <Navigate to="/signup" />}/>
         
       </Routes>
       </Router>

@@ -7,15 +7,7 @@ import LFooter from "../Components/LFooter";
 
 
 const Home = () => {
-  const navigate = useNavigate();
 
-  useEffect(() => {
-    const isAuthenticated = localStorage.getItem("isAuthenticated");
-    if (!isAuthenticated) {
-      navigate("/signin"); // Redirect to Signin page if not authenticated
-    }
-  }, [navigate]);
-  
  
 
   return (
