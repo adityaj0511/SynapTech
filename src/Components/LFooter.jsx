@@ -11,10 +11,10 @@ const LFooter = () => {
         {/* Left Section - Brand Info */}
         <div className="footer-brand">
           <h2 className="footer-logo">
-            <span className="blue">S</span>YNAPTECH <span className="small-text">INFOTECH</span>
+            <span className="blue">S</span>YNAPTEK <span className="small-text">INFOTECH</span>
           </h2>
           <p>
-           SYNAPTECH INFOTECH will partner with you to help make the best technology decisions 
+           SYNAPTEK INFOTECH will partner with you to help make the best technology decisions 
             for your business and keep you up and running for the long haul.
           </p>
           <div className="social-icons">
@@ -29,7 +29,7 @@ const LFooter = () => {
         <div className="footer-contact">
           <h3>Get In Touch</h3>
           
-          <p><FaEnvelope /> synaptechinfotech@gmail.com</p>
+          <p><FaEnvelope /> synaptekinfotech@gmail.com</p>
           <p><FaPhoneAlt /> +91 63536 00958</p>
         </div>
 

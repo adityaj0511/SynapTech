@@ -10,6 +10,7 @@ const Naavbar = () => {
     <Navbar
       expand="lg"
       expanded={expanded}
+      className="navbar"
       style={{
         backgroundColor: "white",
         padding: "10px 15px",
@@ -22,21 +23,14 @@ const Naavbar = () => {
       <Container>
         {/* Logo Section */}
         <Navbar.Brand as={Link} to="/" className="logo-container">
-          <img
-            src="/Logos.png"
-            alt="Logo"
-            className="nav-logo"
-          />
-          <span className="brand-name">SYNAPTECH INFOTECH</span>
+          <img src="/Logos.png" alt="Logo" className="nav-logo" />
+          <span className="brand-name">SYNAPTEK INFOTECH</span>
         </Navbar.Brand>
 
-        <Navbar.Toggle
-          aria-controls="navbar-nav"
-          onClick={() => setExpanded(expanded ? false : "expanded")}
-        />
+   
 
-        <Navbar.Collapse id="navbar-nav" className="justify-content-end">
-          <Nav className="nav-links" onClick={() => setExpanded(false)}>
+        <Navbar.Collapse id="navbar-nav">
+          <Nav className="nav-links" onClick={() => setExpanded(false)} style={{paddingLeft:"50%"}}>
             <Nav.Link as={Link} to="/" className="nav-item">HOME</Nav.Link>
             <Nav.Link as={Link} to="/about" className="nav-item">ABOUT US</Nav.Link>
             <Nav.Link as={Link} to="/services" className="nav-item">SERVICES</Nav.Link>

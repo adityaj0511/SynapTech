@@ -9,7 +9,7 @@ const About = () => {
         <div className="about-text">
           <h2>We Are People-Centric</h2>
           <p>
-            At SynapTech Infotech, we believe that people are the most valuable asset. 
+            At SynapTek Infotech, we believe that people are the most valuable asset. 
             Our priority is to care for our clients and their technology alike. 
             We specialize in Mobile App Development, Web Development, and UI/UX Design,
             ensuring that businesses thrive in a digital world.
@@ -25,7 +25,7 @@ const About = () => {
             <div className="feature">
               <FaChartLine className="feature-icon" />
               <p>
-                SynapTech Infotech helps businesses make the best technology 
+                SynapTek Infotech helps businesses make the best technology 
                 decisions for long-term success.
               </p>
             </div>
