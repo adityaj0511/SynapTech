@@ -13,21 +13,20 @@ import ScrollAnimation from "./scroll";
 
 
 const App = () => {
-  const isAuthenticated = localStorage.getItem("isAuthenticated");
+ 
   return (
  <Router>
       <ScrollAnimation/>
       {/* <Header /> */}
       <Navbars/>
       <Routes>
-      <Route path="/signin" element={<Signin/>}/>
-      <Route path="/" element={isAuthenticated ? <Home /> : <Navigate to="/signin" /> } />
+      
+      <Route path="/" element={ <Home />  } />
       <Route path="/about" element={<AboutPage />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/contact" element={<ContactPage />} />
        
-        <Route path="/signup" element={<Signup/>}/>
-        <Route path="/" element={isAuthenticated ? <Home /> : <Navigate to="/signup" />}/>
+        
         
       </Routes>
       </Router>
